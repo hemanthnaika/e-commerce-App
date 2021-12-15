@@ -55,11 +55,12 @@ export const signupUser = (email, firstName, lastName, password) => async (dispa
         } else {
             toast.error('Signup Failed')
             dispatch({
-                type: "SIGNUP_FAILED",
+                type: "SIGNUP__ FAILED",
                 payload: { signup: false }
             })
         }
     } catch (error) {
+    
         console.log(error.message)
         toast.error(error.message)
     }
