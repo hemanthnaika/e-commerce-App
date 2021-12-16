@@ -60,6 +60,7 @@ export const signupUser = (email, firstName, lastName, password) => async (dispa
             })
         }
     } catch (error) {
+        console.log('hii')
         console.log(error.message)
         toast.error(error.message)
     }
